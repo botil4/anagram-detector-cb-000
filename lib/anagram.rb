@@ -8,8 +8,12 @@ class Anagram
     @word = word
   end
 
-  def match
+  def sort_word(word)
+    word.split("").sort
+  end
 
+  def match(possible_array)
+    
   end
 
 end
