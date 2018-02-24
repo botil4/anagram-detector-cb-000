@@ -13,7 +13,7 @@ class Anagram
   end
 
   def match(possible_array)
-    possible_array.collect {|word| sort_word(word) == sort_word(@word)}
+    possible_array.find_all {|word| sort_word(word) == sort_word(@word)}
   end
 
 end
